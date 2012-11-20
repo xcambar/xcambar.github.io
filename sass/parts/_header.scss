@@ -21,9 +21,12 @@ $header-height: 30px;
 		float: left;
 		font-weight: 300;
 		font-size: 30px;
-		@media screen and (max-width: 1040px){
-			float: none;
-		}
+        @media screen and (max-width: 1040px){
+          float: none;
+        }
+        @media screen and (max-width: 700px){
+          margin-right: 1em;
+        }
 	}
 }
 #main-nav{
@@ -307,8 +310,14 @@ $header-height: 30px;
 			a:last-of-type{
 				margin-right: 0;
 			}
+        }
+        @media screen and (max-width: 700px) {
+          margin-top: 6px;
 		}
 		a{
+            @media screen and (max-width: 700px) {
+              opacity: 0.8;
+            }
 			@include border-radius(50%);
 			@include inline-block;
 			text-indent: -9999px;
