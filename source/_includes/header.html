@@ -1,11 +1,8 @@
-<div class="profilepic">	
-	<img src="https://secure.gravatar.com/avatar/1d2bebf34aac61913239e8bf53d4e70e?size=300" alt="Profile Picture" style="width: 160px;">
-</div>
 <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-<nav id="main-nav">{% include navigation.html %}</nav>
-<br/>
 <h3 class="alignleft">{{ site.subtitle }}</h3>
-<nav id="sub-nav" class="alignright">
+
+<nav class="alignright" id="main-nav">{% include navigation.html %}</nav>
+<nav class="alignright" id="sub-nav" class="alignright">
 	<div class="social">
 		{% if site.facebook_user %}
 		<a class="facebook" href="http://www.facebook.com/{{ site.facebook_user }}" title="Facebook">Facebook</a>

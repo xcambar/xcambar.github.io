@@ -4,7 +4,7 @@
 
 url: http://xcambar.github.com
 title: Xavier Cambar
-subtitle: [insert punchline here]
+subtitle:
 author: Xavier Cambar
 simple_search: http://google.com/search
 description:
@@ -56,6 +56,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
+
+linkedin_user: xaviercambar
 
 # Github repositories
 github_user: xcambar
