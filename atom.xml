@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Xavier Cambar]]></title>
+  <link href="http://xcambar.github.com/atom.xml" rel="self"/>
+  <link href="http://xcambar.github.com/"/>
+  <updated>2012-11-20T07:49:13+01:00</updated>
+  <id>http://xcambar.github.com/</id>
+  <author>
+    <name><![CDATA[Xavier Cambar]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
