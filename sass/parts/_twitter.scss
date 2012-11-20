@@ -1,11 +1,13 @@
 #banner{
+    @media screen and (max-width:700px) {
+        display:none;
+    }
 	color: $color-gray02;
 	padding: 30px 0;
 	line-height: 30px;
 	text-align: center;
 	position: relative;
 	display: none;
-	@include border-shadow();
 	&:hover{
 		a{
 			color: $color-main;

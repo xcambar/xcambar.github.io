@@ -27,12 +27,10 @@ body {
 
 	h1 {
 		float: left;
-        width: 20%;
 	}
 
 	#main-nav {
 		float: right;
-		margin-left: 0px;
 
 		ul { 
 			li {
@@ -194,10 +192,12 @@ body {
 		.left-col {
 			position: relative;
 			width: 100%;
+            height: auto;
 			#header {
-				padding: 40px 0px;
+				padding: 10px 0px;
 				text-align: center;
 				#sub-nav{
+                    float:left;
 					display: block;
 				}
 				#main-nav {
@@ -214,6 +214,12 @@ body {
 		.mid-col {
 			float: none;
 			width: 100%;
+            margin-top: 0;
+            -webkit-border-radius:0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+            border-radius: 0;
 			.mid-col-container {
 				padding: 15px 15px;
 				#content {
