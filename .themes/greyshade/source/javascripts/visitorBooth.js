@@ -11,6 +11,13 @@ function visitorsBooth (conf) {
   var stream;
 
   function getUM(fn) {
+    fn = fn || function () {};
+    if (!navigator.getUserMedia || !navigator.getUserMedia.call) {
+      setTimeout(function () {
+        fn(new Error('WebRTC not available'));
+      }, 1);
+      return;
+    }
     navigator.getUserMedia({video: true}, function(localMediaStream) {
       stream = localMediaStream;
       video.autoplay = true;
@@ -21,12 +28,10 @@ function visitorsBooth (conf) {
         video.style.display = "block";
         canvas.width = video.videoWidth;
         canvas.height = video.videoHeight;
-        fn && fn();
+        fn(null, localMediaStream);
       }, 2000);
 
-    }, function(error) {
-      console.log(error);
-    });
+    }, fn);
     return video;
   };
 

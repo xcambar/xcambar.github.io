@@ -10,14 +10,18 @@ $(function () {
   var video;
   _starter
       .on('click', function () {
-        video = callbacks.start(function () {
+        var _clone = $(this).clone();
+        video = callbacks.start(function (err, stream) {
+          if (err) {
+            _clone.html(err.message);
+            return;
+          }
           // It would be much preferable to use loadedmetadata... if it were reliable.
           $('#shot').show();
           $('#gallery').addClass('blurred');
           _clone.remove();
           _doShoot.show();
         });
-        var _clone = $(this).clone();
         _clone.text('Please wait...');
         $(this)
           .after(_clone)
