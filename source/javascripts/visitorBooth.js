@@ -10,7 +10,6 @@ window.URL = window.URL || window.webkitURL;
 function visitorsBooth(conf) {
   "use strict";
   var canvas = document.createElement('canvas');
-  document.body.appendChild(canvas);
   var shots = document.getElementById(conf.destEltId);
   var video = document.getElementById(conf.videoEltId);
   video.width = conf.width;

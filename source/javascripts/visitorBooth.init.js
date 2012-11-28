@@ -13,7 +13,6 @@ $(function () {
         var _clone = $(this).clone();
         video = callbacks.start(function (err, stream) {
           if (err) {
-            console.log(err)
             _clone.html(err.message);
             return;
           }
