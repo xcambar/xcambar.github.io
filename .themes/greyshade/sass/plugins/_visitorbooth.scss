@@ -63,7 +63,7 @@
 
   display: block;
   width: 80%;
-  margin: 20px auto;
+  margin: 20px auto 0;
   text-align: center;
   padding: 10px 10px;
   font-size: 1.2em;
@@ -72,6 +72,12 @@
   background-color: rgba(104, 158, 135, 0.4);
 
   line-height: 10px;
+}
+
+.rtc_disclaimer {
+  display: block;
+  text-align:center;
+  margin-bottom: 15px;
 }
 
 #takePicture {
