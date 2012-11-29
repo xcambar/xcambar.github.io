@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://xcambar.github.com/blog/2012/11/19/fun-is-the-new-serious/</loc>
+        <lastmod>2012-11-28T21:01:47+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://xcambar.github.com/blog/2012/11/20/me-myself-and-vim/</loc>
+        <lastmod>2012-11-28T21:01:47+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://xcambar.github.com/blog/archives/</loc>
-        <lastmod>2012-11-20T17:46:55+01:00</lastmod>
+        <lastmod>2012-11-28T21:01:47+01:00</lastmod>
     </url>
     <url>
         <loc>http://xcambar.github.com/</loc>
-        <lastmod>2012-11-20T17:46:55+01:00</lastmod>
+        <lastmod>2012-11-28T21:01:47+01:00</lastmod>
     </url>
 </urlset>
