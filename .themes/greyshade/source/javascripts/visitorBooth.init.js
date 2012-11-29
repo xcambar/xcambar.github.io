@@ -28,7 +28,23 @@ $(function () {
           .hide();
       });
   _doShoot.hide().on('click', function () {
-    var img = callbacks.shoot();
+    //Save to MongoLab
+    function _savePicture (_img) {
+      var _photoData = {
+        src: _img.src,
+        date: Date.now()
+      };
+      $.ajax({
+        url: 'https://api.mongolab.com/api/1/databases/blog/collections/photos?apiKey=50b6ab80e4b006ff16080259',
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify(_photoData),
+        success: function (resp) {
+          console.log(resp);
+        }
+      });
+    }
+    var img = callbacks.shoot(_savePicture);
     $(this).hide();
     _starter.show();
 
@@ -43,5 +59,6 @@ $(function () {
     img.style.top = Math.floor(video.height + Math.random() * maxTop) + 'px';
     img.style.left = Math.floor(Math.random() * maxLeft) + 'px';
     img.style.webkitTransform = 'rotateZ(' + (sign * angle) + 'deg)';
+
   });
 });
