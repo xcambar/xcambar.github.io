@@ -72,6 +72,11 @@
 
   display: block;
   width: 80%;
+<<<<<<< HEAD
+=======
+  margin: 20px auto 0;
+  text-align: center;
+>>>>>>> 660a349e631b4ab797e485e895afdefb2c943daa
   padding: 10px 10px;
   margin: 0px auto;
   font-size: 1.2em;
@@ -79,6 +84,7 @@
   color: rgb(104, 158, 135);
   background-color: rgba(104, 158, 135, 0.4);
 
+<<<<<<< HEAD
   line-height: 21px;
   &.disabled {
     -webkit-box-shadow: none;
@@ -89,12 +95,26 @@
     position: relative;
     top: 2px;
   }
+=======
+  line-height: 10px;
+}
+
+.rtc_disclaimer {
+  display: block;
+  text-align:center;
+  margin-bottom: 15px;
+}
+
+#takePicture {
+  background-color: rgb(104, 158, 135);
+>>>>>>> 660a349e631b4ab797e485e895afdefb2c943daa
 }
 
 .pictureButton:active {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5) inset, 0 2px 2px 0 rgba(255,255,255,0.5);
      -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5) inset, 0 2px 2px 0 rgba(255,255,255,0.5);
           box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5) inset, 0 2px 2px 0 rgba(255,255,255,0.5);
+<<<<<<< HEAD
   &.disabled {
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
@@ -106,3 +126,6 @@
   background-color: rgb(104, 158, 135);
 }
 
+=======
+}
+>>>>>>> 660a349e631b4ab797e485e895afdefb2c943daa
