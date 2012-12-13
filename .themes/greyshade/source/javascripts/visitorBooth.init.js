@@ -45,7 +45,7 @@ $(function () {
         contentType: "application/json",
         data: JSON.stringify(_photoData),
         success: function (resp) {
-          console.log(resp);
+          //console.log(resp);
         }
       });
     }
