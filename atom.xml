@@ -4,7 +4,7 @@
   <title><![CDATA[Xavier Cambar]]></title>
   <link href="http://xcambar.github.com/atom.xml" rel="self"/>
   <link href="http://xcambar.github.com/"/>
-  <updated>2012-11-29T01:13:50+01:00</updated>
+  <updated>2012-12-13T10:50:36+01:00</updated>
   <id>http://xcambar.github.com/</id>
   <author>
     <name><![CDATA[Xavier Cambar]]></name>
@@ -12,5 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Smile to webRTC]]></title>
+    <link href="http://xcambar.github.com/blog/2012/11/22/smile-to-webrtc/"/>
+    <updated>2012-11-22T01:29:00+01:00</updated>
+    <id>http://xcambar.github.com/blog/2012/11/22/smile-to-webrtc</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[me myself and Vim]]></title>
+    <link href="http://xcambar.github.com/blog/2012/11/20/me-myself-and-vim/"/>
+    <updated>2012-11-20T20:41:00+01:00</updated>
+    <id>http://xcambar.github.com/blog/2012/11/20/me-myself-and-vim</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fun is the new serious]]></title>
+    <link href="http://xcambar.github.com/blog/2012/11/19/fun-is-the-new-serious/"/>
+    <updated>2012-11-19T08:50:00+01:00</updated>
+    <id>http://xcambar.github.com/blog/2012/11/19/fun-is-the-new-serious</id>
+    <content type="html"><![CDATA[<h2>New is fun</h2>
+
+<p>To set up this new blog, I decided to go with <a href="http://octopress.org">Octopress</a>.
+Obviously, it has come with a bunch of caveats (mostly issue <a href="https://github.com/imathis/octopress/issues/336">#336</a>),
+but overall it has been a great experience.
+There&#8217;s been a tremendous amount of work achieved for Jekyll and for Octopress, and that deserves congratulations.
+So <strong>Congrats, guys</strong>!</p>
+
+<p>Although the tool is excellent, the best part of the process was <em>I&#8217;ve had fun</em> doing it.</p>
+
+<h2>Keep learning</h2>
+
+<h2>Fun is the new serious</h2>
+
+<p>If you&#8217;re lucky enough to work in a company that prevails employee happiness, you probably know what I mean.</p>
+
+<h2>Consequences as a dev</h2>
+
+<h3>For an app, think of your users</h3>
+
+<h3>For a library, think of your users</h3>
+]]></content>
+  </entry>
   
 </feed>

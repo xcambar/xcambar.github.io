@@ -44,7 +44,7 @@ function visitorsBooth(conf) {
     return video;
   }
 
-  function _shoot() {
+  function _shoot(cb) {
     var _img = document.createElement('img');
     _img.className = 'shot';
     shots.appendChild(_img);
@@ -54,6 +54,7 @@ function visitorsBooth(conf) {
       _img.width = video.width;
       stream.stop();
       video.style.display = "none";
+      cb && cb(_img);
     });
     return _img;
   }
