@@ -10,10 +10,15 @@ $(function () {
   var video;
   _starter
       .on('click', function () {
-        var _clone = $(this).clone();
+        var _clone = $('<span class="pictureButton">');
         video = callbacks.start(function (err, stream) {
           if (err) {
-            _clone.html(err.message);
+            var msg = err.message;
+            if (Object.prototype.toString.call(err) === '[object NavigatorUserMediaError]') {
+              msg = 'Ooops...';
+            }
+           _starter.show();
+           _clone.remove();
             return;
           }
           // It would be much preferable to use loadedmetadata... if it were reliable.
