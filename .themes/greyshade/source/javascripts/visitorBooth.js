@@ -1,3 +1,6 @@
+/*jshint browser: true */
+/*globals requestAnimationFrame: true */
+
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
     navigator.mozGetUserMedia || navigator.msGetUserMedia;
 window.requestAnimationFrame = window.requestAnimationFrame ||
@@ -44,23 +47,32 @@ function visitorsBooth(conf) {
     return video;
   }
 
-  function _shoot(cb) {
+  function addEmptyShot () {
     var _img = document.createElement('img');
     _img.className = 'shot';
     shots.appendChild(_img);
+    _img.width = Math.min(video.width, conf.width);
+    return _img;
+  }
+
+  function _shoot(cb) {
+    var _img = addEmptyShot();
     requestAnimationFrame(function () {
       ctx.drawImage(video, 0, 0);
       _img.src = canvas.toDataURL('image/webp');
       _img.width = video.width;
       stream.stop();
       video.style.display = "none";
-      cb && cb(_img);
+      if (typeof cb === 'function') {
+       cb(_img); 
+      }
     });
     return _img;
   }
 
   return {
     start: getUM,
-    shoot: _shoot
+    shoot: _shoot,
+    addShot: addEmptyShot
   };
 }
