@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "clean-css": "^5.3.1"
+    "clean-css": "^5.3.1",
+    "html-minifier": "^4.0.0"
   }
 }

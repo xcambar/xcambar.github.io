@@ -32,7 +32,30 @@ h4 {
   font-size: 118%;
 }
 
+
 a {
   color: inherit;
+  position: relative;
+  text-decoration: none;
+  --shadow-color: #f0f0ee;
+  text-shadow: 
+      2px 0 var(--shadow-color), 
+      -2px 0 var(--shadow-color), 
+      0 2px var(--shadow-color), 
+      0 -2px var(--shadow-color),
+      1px 1px var(--shadow-color), 
+      -1px -1px var(--shadow-color), 
+      1px -1px var(--shadow-color), 
+      -1px 1px var(--shadow-color);
 }
 
+a:after {
+  content: '';
+  position: absolute;
+  bottom: .1ch;
+  left: .4ch;
+  height: 1ch;
+  width: 100%;
+  background: #bbb;
+  z-index: -1;
+}

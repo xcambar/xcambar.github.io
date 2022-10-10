@@ -6,10 +6,10 @@ title: Xavier Cambar
 
 # Welcome
 
-Hello, I'm Xavier.<br>
-I am a married father of two.<br> I work as an Engineering Manager in the InsurTech industry, at Clark.
+I am Xavier.<br>
+I am a married father of two.<br> I work as an Engineering Manager at [Clark](clark.de).
 <br>
-You can visit my LinkedIn page for details.
+You can visit [my LinkedIn page](https://linkedin.com/in/xavier.cambar) for details.
 <br>
 You can also get in touch by [Email](mailto:xavier@two15.co).
 
