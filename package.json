@@ -1,0 +1,12 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "my blog",
+  "main": "index.js",
+  "author": "Xavier Cambar",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "clean-css": "^5.3.1"
+  }
+}

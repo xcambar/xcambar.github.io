@@ -1,0 +1,38 @@
+body { font-family: “Lucida Grande”; }
+
+html {
+  background-color: #f0f0ee;
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.25em;
+}
+  
+p { text-align: justify; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, verdana, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 218%;
+}
+
+h2 {
+  font-size: 164%;
+}
+
+h3 {
+  font-size: 145%;
+}
+
+h4 {
+  font-size: 118%;
+}
+
+a {
+  color: inherit;
+}
+
